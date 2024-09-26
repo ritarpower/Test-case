@@ -30,7 +30,7 @@ public class NormalPatientController {
         do {
             System.out.println("Nhap ma benh an: ");
             codeFile = sc.nextLine();
-        } while (!Validate.isValidCodeFile(codeFile));
+        } while (!Validate.isValidCodeFile(codeFile) || isExistCodeFile(codeFile));
         String codePatient;
         do {
             System.out.println("Nhap ma benh nhan: ");
@@ -86,5 +86,15 @@ public class NormalPatientController {
             default:
                 System.out.println("Thao tac khong thanh cong!");
         }
+    }
+
+    public boolean isExistCodeFile(String codeFile){
+        List<NormalPatient> normalPatients = IONormalPatient.readNormalPatientFromFile();
+        for (NormalPatient normalPatient : normalPatients) {
+            if (normalPatient.getCodeFile().equals(codeFile)) {
+                return true;
+            }
+        }
+        return false;
     }
 }

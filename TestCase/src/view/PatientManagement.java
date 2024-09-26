@@ -52,7 +52,7 @@ public class PatientManagement {
                     "2.\tThem benh an moi.\n" +
                     "3.\tXoa benh an.\n" +
                     "4.\tQuay lai trang chinh.\n" +
-                    "5.\tThoat.\n" +
+                    "5.\tXoa.\n" +
                     "Chon chuc nang: ");
             int choose = Integer.parseInt(sc.nextLine());
             switch (choose) {

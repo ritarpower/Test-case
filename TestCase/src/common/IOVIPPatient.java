@@ -1,6 +1,5 @@
 package common;
 
-import model.NormalPatient;
 import model.VIPPatient;
 
 import java.io.*;
