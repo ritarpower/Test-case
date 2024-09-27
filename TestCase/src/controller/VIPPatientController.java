@@ -19,7 +19,7 @@ public class VIPPatientController {
             if (vipPatient == null) {
                 return;
             } else {
-                System.out.println(vipPatient.toData());
+                System.out.println(vipPatient);
             }
         }
     }

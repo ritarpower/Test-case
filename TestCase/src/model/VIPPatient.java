@@ -30,7 +30,7 @@ public class VIPPatient extends Patient {
 
 
     @Override
-    public String toData() {
+    public String toString() {
         return "VIPPatient {" + "id=" + getId() + ", codeFile=" + getCodeFile() + ", codePatient=" + getCodePatient() + ", name='" + getName() + "', inDate='" + getInDate() + "', outDate='" +
                 getOutDate() + "', reason='" + getReason() + "', vipType='" + getVipType() + "', vipDate='" + getVipDate() + "'}";
     }

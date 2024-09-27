@@ -19,7 +19,7 @@ public class NormalPatient extends Patient {
     }
 
     @Override
-    public String toData() {
+    public String toString() {
         return "NormalPatient {" + "id=" + getId() + ", codeFile=" + getCodeFile() + ", codePatient=" + getCodePatient() + ", name='" + getName() + "', inDate='" + getInDate() + "', outDate='" +
                 getOutDate() + "', reason='" + getReason() + "', fee=" + getFee() + "}";
     }

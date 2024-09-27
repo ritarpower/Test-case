@@ -17,7 +17,7 @@ public class NormalPatientController {
         List<NormalPatient> normalPatients = normalPatientService.getAll();
         for (NormalPatient normalPatient : normalPatients) {
             if (normalPatient != null) {
-                System.out.println(normalPatient.toData());
+                System.out.println(normalPatient);
             } else {
                 return;
             }

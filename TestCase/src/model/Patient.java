@@ -77,5 +77,5 @@ public abstract class Patient {
         this.reason = reason;
     }
 
-    public abstract String toData();
+    public abstract String toString();
 }
